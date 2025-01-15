@@ -66,4 +66,4 @@ def lambda_handler(event, context):
 
         return done(None, {"output": output_text})
     except Exception as e:
-        return done(e, "Error occured!")
+        return done(e, f"Error occured!!!: {e}")
